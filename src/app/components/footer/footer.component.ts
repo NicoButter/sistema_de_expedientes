@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  currentDate: Date = new Date();
 }

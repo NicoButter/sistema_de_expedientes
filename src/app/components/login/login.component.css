@@ -1,0 +1,102 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;      
+}
+
+.container h1 {
+    color: #333A56;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #52658F; 
+    background-color: #F7F5E6;
+    transition: background-color 0.3s ease-in-out;
+    min-width: 180px; 
+}
+
+.login-form:hover {
+    background-color: #333A56;
+}
+
+.login-form button {
+    margin-top: 25px;
+    background-color: #333A56; /* Color de fondo */
+    color: #E8E8E8; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.login-form button:hover {
+    background-color: #E8E8E8;
+    color: #333A56;
+}
+
+
+/* Estilos para los campos de entrada en el formulario */
+.login-form .input-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el campo de entrada */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/*Estilos para la etiqueta del marcador de posición*/
+.login-form label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #333A56;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.2s ease-out;
+}
+
+/* Muestra la etiqueta del marcador de posición dentro del campo al enfocar o si tiene valor */
+.login-form input:focus + label,
+.login-form input:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #E8E8E8;
+}
+
+/* Cambia el estilo del campo de entrada al pasar el mouse por encima */
+.login-form input:hover {
+    border-color: #E8E8E8; /* Cambia el color del borde al pasar el mouse por encima */
+}
+
+/* Cambia el estilo del campo de entrada enfocado */
+.login-form input:focus {
+    outline: none; /* Elimina el resplandor al enfocar */
+    border-color: #E8E8E8; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px #333A56; /* Agrega una sombra al enfocar */
+}

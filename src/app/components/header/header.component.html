@@ -1,1 +1,24 @@
-<p>header works!</p>
+<header>
+    <div class="logo">
+        <img src="../../../assets/images/Escudo_de_la_Provincia_de_Santa_Cruz.svg.png" alt="Logo del Consultorio">
+    </div>
+    <nav>
+         <ul>
+            <li><a routerLink="/turnos">Proyectos</a></li>
+            <li><a href="expedientes.html">Expedientes</a></li>
+            <li><a href="notas.html">Notas</a></li>
+            <li><a href="autogestion.html">Autogestión</a></li>
+        </ul>
+    </nav>
+    <div class="user-profile">
+        <img src="user-avatar.png" alt="Avatar del Usuario">
+        <span>NOMBRE USUARIO</span>
+        <a (click)="logout()">cerrar sesion</a>
+    </div>
+    <div class="notifications">
+        <a href="notificaciones.html">
+            <i class="fas fa-bell"></i>
+            <span class="badge">3</span>
+        </a>
+    </div>
+</header>
